@@ -12,10 +12,18 @@ void CSVReader::compute() {
 		char* str = (char*)line.c_str();  // converts string to char*
 		char* nextstr;
 
-		// will include conversions
 		// get num and den of r1 and r2 as well as operation
 		// operation string will  = an operation
 		// result = result from operator overload
+		// HAVE TO RESEARCH HOW TO TURN CHAR TO INT, 
+		// atoi, strtok, strtok_s? need to do more research, check forums
+		r1.setNum
+		r2.setDen
+
+		sting operation = 
+
+		r2.setNum
+		r2.setDen
 
 		if (operation == "+") {
 			RationalFraction(r1 + r2);
