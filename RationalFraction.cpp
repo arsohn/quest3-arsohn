@@ -80,3 +80,26 @@ RationalFraction RationalFraction::operator/(const RationalFraction& r) { // / o
 	return result;
 }
 
+bool RationalFraction::operator==(const RationalFraction& r) {
+	return (this->num * r.den == this->den * r.num);
+}
+
+bool RationalFraction::operator!=(const RationalFraction& r) {
+	return (this->num * r.den != this->den * r.num);
+}
+
+bool RationalFraction::operator>(const RationalFraction& r) {
+	return (this->num * r.den > this->den * r.num);
+}
+
+bool RationalFraction::operator<(const RationalFraction& r) {
+	return (this->num * r.den < this->den * r.num);
+}
+
+bool RationalFraction::operator>=(const RationalFraction& r) {
+	return (this->num * r.den >= this->den * r.num);
+}
+
+bool RationalFraction::operator<=(const RationalFraction& r) {
+	return (this->num * r.den <= this->den * r.num);
+}
