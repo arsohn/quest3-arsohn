@@ -4,8 +4,6 @@
 int getGCD(int n1, int n2);
 
 class RationalFraction {
-	int num;
-	int den;
 public:
 	RationalFraction(int n1 = 0, int n2 = 0);
 	RationalFraction(const RationalFraction& r);
@@ -24,6 +22,9 @@ public:
 	bool operator<(const RationalFraction& r);
 	bool operator>=(const RationalFraction& r);
 	bool operator<=(const RationalFraction& r);
+private:
+	int num;
+	int den;
 };
 
 #endif
